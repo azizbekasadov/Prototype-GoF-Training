@@ -13,6 +13,7 @@
 		5D807A9B296F27FB0046AD6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D807A99296F27FB0046AD6F /* Main.storyboard */; };
 		5D807A9D296F27FD0046AD6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D807A9C296F27FD0046AD6F /* Assets.xcassets */; };
 		5D807AA0296F27FD0046AD6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D807A9E296F27FD0046AD6F /* LaunchScreen.storyboard */; };
+		5D807AAF296F285E0046AD6F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D807AAE296F285E0046AD6F /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5D807A9C296F27FD0046AD6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D807A9F296F27FD0046AD6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D807AA1296F27FD0046AD6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D807AAE296F285E0046AD6F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,72 @@
 		5D807A92296F27FB0046AD6F /* 4. Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				5D807AAC296F28380046AD6F /* DataLayer */,
+				5D807AA7296F28040046AD6F /* AppLayer */,
+				5D807AA9296F28220046AD6F /* Presentation */,
+				5D807AA8296F280C0046AD6F /* Resources */,
+			);
+			path = "4. Prototype";
+			sourceTree = "<group>";
+		};
+		5D807AA7296F28040046AD6F /* AppLayer */ = {
+			isa = PBXGroup;
+			children = (
 				5D807A93296F27FB0046AD6F /* AppDelegate.swift */,
 				5D807A95296F27FB0046AD6F /* SceneDelegate.swift */,
-				5D807A97296F27FB0046AD6F /* ViewController.swift */,
-				5D807A99296F27FB0046AD6F /* Main.storyboard */,
+			);
+			path = AppLayer;
+			sourceTree = "<group>";
+		};
+		5D807AA8296F280C0046AD6F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				5D807A9C296F27FD0046AD6F /* Assets.xcassets */,
 				5D807A9E296F27FD0046AD6F /* LaunchScreen.storyboard */,
 				5D807AA1296F27FD0046AD6F /* Info.plist */,
 			);
-			path = "4. Prototype";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5D807AA9296F28220046AD6F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5D807AAA296F28280046AD6F /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5D807AAA296F28280046AD6F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5D807AAB296F282D0046AD6F /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5D807AAB296F282D0046AD6F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5D807A97296F27FB0046AD6F /* ViewController.swift */,
+				5D807A99296F27FB0046AD6F /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5D807AAC296F28380046AD6F /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5D807AAD296F28570046AD6F /* Prototypes */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		5D807AAD296F28570046AD6F /* Prototypes */ = {
+			isa = PBXGroup;
+			children = (
+				5D807AAE296F285E0046AD6F /* Person.swift */,
+			);
+			path = Prototypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +199,7 @@
 			files = (
 				5D807A98296F27FB0046AD6F /* ViewController.swift in Sources */,
 				5D807A94296F27FB0046AD6F /* AppDelegate.swift in Sources */,
+				5D807AAF296F285E0046AD6F /* Person.swift in Sources */,
 				5D807A96296F27FB0046AD6F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7FCTC6DRE7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "4. Prototype/Info.plist";
+				INFOPLIST_FILE = "4. Prototype/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +377,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7FCTC6DRE7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "4. Prototype/Info.plist";
+				INFOPLIST_FILE = "4. Prototype/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
